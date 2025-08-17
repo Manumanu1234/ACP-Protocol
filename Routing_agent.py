@@ -120,6 +120,6 @@ class AgentExecuter:
 
             
     async def AgentCreation(self,available_agent,query):
-            agent = Agent(model=Groq(id="openai/gpt-oss-20b",api_key="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"), tools=[AddAgent,SubAgent,MulAgent,DivAgent],instructions=[self.PromptFormating(available_agents=available_agent)],show_tool_calls=True,markdown=True)
+            agent = Agent(model=Groq(id="openai/gpt-oss-20b",api_key=""), tools=[AddAgent,SubAgent,MulAgent,DivAgent],instructions=[self.PromptFormating(available_agents=available_agent)],show_tool_calls=True,markdown=True)
             await agent.aprint_response(query)
     
