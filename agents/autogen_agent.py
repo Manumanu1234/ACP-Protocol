@@ -23,7 +23,7 @@ async def AutoGenAgent(inputs:list[Message])->AsyncGenerator[RunYield,RunYieldRe
     model_client = OpenAIChatCompletionClient(
         model="gemini-2.0-flash-lite",
         model_info=ModelInfo(vision=True, function_calling=True, json_output=True, family="unknown", structured_output=True),
-        api_key="AIzaSyBm46_0Iy2Jn-wCYia-VGZckO1XElR6VbI",
+        api_key="",
     )
     question=inputs[0].parts[0].content
     print
