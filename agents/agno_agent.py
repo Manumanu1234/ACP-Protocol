@@ -23,7 +23,7 @@ async def run_mcp_agent(inputs:list[Message])->AsyncGenerator[RunYield,RunYieldR
     async with MultiMCPTools(server_params_list=[mcp_tools],timeout_seconds=30.0) as main_mcp_tools:
         print(main_mcp_tools)
         
-        agent = Agent(model=Groq(id="openai/gpt-oss-20b",api_key="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"), tools=[main_mcp_tools])
+        agent = Agent(model=Groq(id="openai/gpt-oss-20b",api_key=""), tools=[main_mcp_tools])
 
         # Run the agent
         res=await agent.arun(inputs[0].parts[0].content)
