@@ -1,0 +1,24 @@
+[project]
+name = "acp-protocol"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "acp-sdk>=1.0.2",
+    "agno>=1.7.11",
+    "autogen-agentchat>=0.7.2",
+    "autogen-ext[openai]>=0.7.2",
+    "beeai-framework>=0.1.4",
+    "beeai-sdk>=0.0.4",
+    "fastacp>=0.0.0",
+    "groq>=0.31.0",
+    "httpx>=0.28.1",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-core>=0.3.74",
+    "langchain-groq>=0.3.7",
+    "langchain-mcp-adapters>=0.1.9",
+    "langgraph>=0.6.5",
+    "mcp[cli]>=1.13.0",
+]
