@@ -29,7 +29,7 @@ async def Langchain_Server(inputs:list[Message])->AsyncGenerator[RunYield,RunYie
             # Create and run the agent
             llm=ChatGroq(
                 model="openai/gpt-oss-20b",
-                api_key="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"
+                api_key=""
             )
             agent = create_react_agent(model=llm,tools=tools,prompt="You must use appropriate tool for the user query")
             agent_response = await agent.ainvoke({"messages": inputs[0].parts[0].content})
